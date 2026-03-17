@@ -179,7 +179,7 @@ GND ($-$) extends the bootloader window to 1--3~seconds, giving us time to press
 The ESP32 firmware starts a TCP server on port 328 and relays bytes between
 the WiFi socket and UART2.Code for ESP32:
 \begin{notebox}
-\href{https://github.com/gajaredarsh/ESP-flasher/blob/main/esp-arduino_flasher/esp_programmer/main.ino}{\ic{esp32\_programmer/main.ino}}.
+\href{https://github.com/gajaredarsh/esp-flasher/blob/main/esp_programmer/main.ino}{\ic{esp32\_programmer/main.ino}}.
 \end{notebox}
 Replace \ic{YOUR\_SSID} \& \ic{YOUR\_PASSWORD} with the SSID and Password of the network you are using.\\
 \begin{enumerate}[leftmargin=*, itemsep=2pt]
@@ -204,7 +204,7 @@ nvim src/main.cpp    # write your sketch
 \subsection{PlatformIO Configuration}
 Paste this code in platformio.ini
 \begin{notebox}
-\href{https://github.com/gajaredarsh/ESP-flasher/blob/main/esp-arduino_flasher/arduino-code/platformio.ini}{\ic{arduino\_code/platformio.ini}}.
+\href{https://github.com/gajaredarsh/esp-flasher/blob/main/arduino-code/platformio.ini}{\ic{arduino\_code/platformio.ini}}.
 \end{notebox}
 Replace \ic{ESP\_IP} with your ESP32's IP address (e.g.\ \ic{192.168.43.100}).
 

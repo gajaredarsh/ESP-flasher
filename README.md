@@ -26,7 +26,7 @@ nano src/main.cpp   # write your sketch
 pio run --target upload
 ```
 
-With 100µF capacitor on RST — fully automatic, no button press needed.
+With 100µF capacitor on RST button press needed.
 
 ---
 
