@@ -168,8 +168,8 @@ the reset button on the Arduino.
 The ESP32 firmware starts a TCP server on port 328 and relays bytes between the
 WiFi socket and UART2. Code:
 \begin{notebox}
-\href{https://github.com/your-repo/esp-flasher/blob/main/esp32_programmer/main.ino}%
-{\texttt{esp32\_programmer/main.ino}}.
+\href{https://github.com/gajaredarsh/esp-flasher/blob/main/esp_programmer/src/main.cpp}%
+{\texttt{esp32\_programmer/src/main.cpp}}.
 \end{notebox}
 Replace \texttt{YOUR\_SSID} and \texttt{YOUR\_PASSWORD} with your network credentials.
 
@@ -196,7 +196,7 @@ nvim src/main.cpp  # write your sketch
 
 Paste the contents of
 \begin{notebox}
-\href{https://github.com/your-repo/esp-flasher/blob/main/arduino_code/platformio.ini}%
+\href{https://github.com/gajaredarsh/esp-flasher/blob/main/arduino-code/platformio.ini}%
 {\texttt{arduino\_code/platformio.ini}}
 \end{notebox}
 into your project's \texttt{platformio.ini}.
@@ -284,7 +284,7 @@ ESP32 \#2 & Receiver / OTA Target & 192.168.4.2 & 8080 \\
 
 Compile the following code using Platformio
 \begin{notebox}
-\href{https://github.com/your-repo/esp-flasher/blob/main/esp32_receiver/esp32_receiver_final.ino}%
+\href{https://github.com/gajaredarsh/esp-flasher/blob/main/esp_receiver/src/main.cpp}%
 {\texttt{esp32\_receiver/src/main.cpp}}
 \end{notebox}
 Using ArduinoDroid flash via USB. This is the \textbf{only time USB is needed}
@@ -295,7 +295,7 @@ on port 8080.
 
 Compile the following using Platformio
 \begin{notebox}
-\href{https://github.com/your-repo/esp-flasher/blob/main/esp32_sender/esp32_sender_stable.ino}%
+\href{https://github.com/gajaredarsh/esp-flasher/blob/main/esp_sender/src/main.cpp}%
 {\texttt{esp32\_sender/src/main.cpp}}
 \end{notebox}
 Using ArduinoDroid flash via USB. ESP32\,\#1 boots as WiFi AP with SSID \textbf{ESP32-OTA-Net},
