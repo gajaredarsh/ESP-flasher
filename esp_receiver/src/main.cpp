@@ -18,7 +18,7 @@ const char* WIFI_PASSWORD = "12345678";
 const int   OTA_PORT      = 8080;
 
 // ── Your app config ───────────────────────────────────────────
-c
+
 // ──────────────────────────────────────────────────────────────
 
 WiFiServer otaServer(OTA_PORT);
